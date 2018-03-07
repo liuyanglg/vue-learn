@@ -49,10 +49,12 @@ export default {
     }
   },
   mounted() {
-    this.showLogin = true;
+    this.showLogin = true
+    console.log("count",this.count)
+    console.log("userInfo",this.userInfo)
   },
   computed: {
-    ...mapState(['count']),
+    ...mapState(['count','userInfo']),
   },
   methods: {
       login:function(){
@@ -67,7 +69,8 @@ export default {
       },
       register:()=>{
         console.log("register")
-        console.log("count:",this.count)        
+        console.log("count:",this.count)
+        console.log("userInfo:",this.userInfo)
       }
   },
   watch: {

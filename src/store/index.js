@@ -1,11 +1,12 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 const state = {
-  count: 1
-};
+  count: 1,
+  userInfo: {phone: 15988124357}
+}
 
 const mutations = {
   add(state) {
@@ -14,12 +15,12 @@ const mutations = {
   reduce(state) {
     state.count -= 1;
   }
-};
+}
 
-const actions = {};
+const actions = {}
 
 export default new Vuex.Store({
   state,
   actions,
   mutations
-});
+})
