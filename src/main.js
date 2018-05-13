@@ -13,18 +13,19 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI);
 
 Vue.prototype.$http = axios.create({
-  baseURL: "http://localhost:8081",
-  headers: {
-    "Content-Type": "application/json;charset=utf-8",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers":
-      "Content-Type,Content-Length, Authorization, Accept,X-Requested-With",
-    "Access-Control-Allow-Methods": "PUT,POST,GET,DELETE,OPTIONS"
-  },
-  proxy: {
-    host: "localhost",
-    port: "8080"
-  }
+  // baseURL: "http://localhost:4001",
+  // baseURL: "/api",
+  // headers: {
+  //   "Content-Type": "application/json;charset=utf-8",
+  //   "Access-Control-Allow-Origin": "*",
+  //   "Access-Control-Allow-Headers":
+  //     "Content-Type,Content-Length, Authorization, Accept,X-Requested-With",
+  //   "Access-Control-Allow-Methods": "PUT,POST,GET,DELETE,OPTIONS"
+  // },
+  // proxy: {
+  //   host: "localhost",
+  //   port: "8080"
+  // }
 });
 
 /* eslint-disable no-new */

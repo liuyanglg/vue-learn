@@ -59,7 +59,7 @@ export default {
   methods: {
       login:function(){
         console.log("login form:",this.loginForm)
-          this.$http.post('user/login',this.loginForm)
+          this.$http.post('/api/user/login',this.loginForm)
           .then(function (response) {
           console.log(response);
         })
